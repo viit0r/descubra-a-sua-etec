@@ -4,4 +4,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity" />
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgCursos"
+        android:layout_width="179dp"
+        android:layout_height="174dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imgUnidades"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cursos" />
+
+    <ImageView
+        android:id="@+id/imgUnidades"
+        android:layout_width="179dp"
+        android:layout_height="174dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/unidades" />
+
+    <TextView
+        android:id="@+id/txtCursos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswald"
+        android:text="@string/txt_curso"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgCursos"
+        app:layout_constraintEnd_toEndOf="@+id/imgCursos"
+        app:layout_constraintStart_toStartOf="@+id/imgCursos"
+        app:layout_constraintTop_toBottomOf="@+id/imgCursos" />
+
+    <TextView
+        android:id="@+id/txtUnidades"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswald"
+        android:text="@string/txt_unidades"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgUnidades"
+        app:layout_constraintEnd_toEndOf="@+id/imgUnidades"
+        app:layout_constraintStart_toStartOf="@+id/imgUnidades"
+        app:layout_constraintTop_toBottomOf="@+id/imgUnidades" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/oswald"
+        android:text="Escolha a opção desejada:"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
