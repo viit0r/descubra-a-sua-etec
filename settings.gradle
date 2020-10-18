@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Descubra a sua ETEC 2.0"
