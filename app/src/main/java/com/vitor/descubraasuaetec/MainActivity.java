@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         cursos = findViewById(R.id.imgCursos);
         unidades = findViewById(R.id.imgUnidades);
 
+        //criação dos botões para ir para as listas
         cursos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

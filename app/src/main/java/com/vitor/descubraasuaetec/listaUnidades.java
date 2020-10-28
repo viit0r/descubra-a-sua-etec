@@ -1,4 +1,4 @@
-package com.vitor.descubraasuaetec.adapter;
+package com.vitor.descubraasuaetec;
 
 import androidx.appcompat.app.AppCompatActivity;
 
