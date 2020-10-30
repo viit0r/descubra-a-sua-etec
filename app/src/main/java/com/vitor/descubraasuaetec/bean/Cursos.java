@@ -2,48 +2,62 @@ package com.vitor.descubraasuaetec.bean;
 
 public class Cursos {
 
-    private String nomeCurso, linkCurso, descCurso, profissionalCurso, tipoCurso;
+    private int id;
+    private String nome, descricao, funcao, tipos, link;
 
-    public Cursos() {
+    public Cursos(){
     }
 
-    public String getNomeCurso() {
-        return nomeCurso;
+    public Cursos(String nome, String descricao) {
+        this.nome = nome;
+        this.descricao = descricao;
     }
 
-    public void setNomeCurso(String nomeCurso) {
-        this.nomeCurso = nomeCurso;
+    public int getId() {
+        return id;
     }
 
-    public String getLinkCurso() {
-        return linkCurso;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public void setLinkCurso(String linkCurso) {
-        this.linkCurso = linkCurso;
+    public String getFuncao() {
+        return funcao;
     }
 
-    public String getDescCurso() {
-        return descCurso;
+    public void setFuncao(String funcao) {
+        this.funcao = funcao;
     }
 
-    public void setDescCurso(String descCurso) {
-        this.descCurso = descCurso;
+    public String getTipos() {
+        return tipos;
     }
 
-    public String getProfissionalCurso() {
-        return profissionalCurso;
+    public void setTipos(String tipos) {
+        this.tipos = tipos;
     }
 
-    public void setProfissionalCurso(String profissionalCurso) {
-        this.profissionalCurso = profissionalCurso;
+    public String getLink() {
+        return link;
     }
 
-    public String getTipoCurso() {
-        return tipoCurso;
+    public void setLink(String link) {
+        this.link = link;
     }
 
-    public void setTipoCurso(String tipoCurso) {
-        this.tipoCurso = tipoCurso;
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 }

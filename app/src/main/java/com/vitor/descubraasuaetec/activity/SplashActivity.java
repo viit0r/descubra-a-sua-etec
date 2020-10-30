@@ -1,4 +1,4 @@
-package com.vitor.descubraasuaetec;
+package com.vitor.descubraasuaetec.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,7 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-public class Splash extends AppCompatActivity {
+import com.vitor.descubraasuaetec.R;
+import com.vitor.descubraasuaetec.activity.MainActivity;
+
+public class SplashActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

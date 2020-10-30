@@ -2,9 +2,33 @@ package com.vitor.descubraasuaetec.bean;
 
 public class Unidades {
 
-    private String nome, curso, etim, endereco, site, telefone;
+    private int id;
+    private String nome, cursos, etim, endereco, site, telefone;
 
     public Unidades() {
+    }
+
+    public Unidades(String nome, String endereco) {
+        this.nome = nome;
+        this.endereco = endereco;
+    }
+
+    public Unidades(int id, String nome, String cursos, String etim, String endereco, String site, String telefone) {
+        this.id = id;
+        this.nome = nome;
+        this.cursos = cursos;
+        this.etim = etim;
+        this.endereco = endereco;
+        this.site = site;
+        this.telefone = telefone;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNome() {
@@ -15,12 +39,12 @@ public class Unidades {
         this.nome = nome;
     }
 
-    public String getCurso() {
-        return curso;
+    public String getCursos() {
+        return cursos;
     }
 
-    public void setCurso(String curso) {
-        this.curso = curso;
+    public void setCursos(String cursos) {
+        this.cursos = cursos;
     }
 
     public String getEtim() {

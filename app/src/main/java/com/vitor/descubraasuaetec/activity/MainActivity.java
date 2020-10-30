@@ -1,4 +1,4 @@
-package com.vitor.descubraasuaetec;
+package com.vitor.descubraasuaetec.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+
+import com.vitor.descubraasuaetec.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         cursos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), listaCursos.class);
+                Intent intent = new Intent(getApplicationContext(), ListaCursosActivity.class);
                 startActivity(intent);
             }
         });
@@ -31,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         unidades.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), listaUnidades.class);
+                Intent intent = new Intent(getApplicationContext(), ListaUnidadesActivity.class);
                 startActivity(intent);
             }
         });
