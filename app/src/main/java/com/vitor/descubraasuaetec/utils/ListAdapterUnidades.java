@@ -10,7 +10,7 @@ import com.vitor.descubraasuaetec.R;
 import com.vitor.descubraasuaetec.bean.Unidades;
 import java.util.List;
 
-public class ListAdapterUnidades extends RecyclerView.Adapter<ListAdapterUnidades.ListaUnidadesAdapterViewHolder> {
+public class ListAdapterUnidades extends RecyclerView.Adapter<ListAdapterUnidades.ListaUnidadesViewHolder> {
 
     private List<Unidades> list;
 
@@ -20,15 +20,13 @@ public class ListAdapterUnidades extends RecyclerView.Adapter<ListAdapterUnidade
 
     @NonNull
     @Override
-    public ListAdapterUnidades.ListaUnidadesAdapterViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item, parent, false);
-        return new ListaUnidadesAdapterViewHolder(view);
-
+    public ListaUnidadesViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item, parent,false);
+        return new ListaUnidadesViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ListAdapterUnidades.ListaUnidadesAdapterViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ListAdapterUnidades.ListaUnidadesViewHolder holder, int position) {
 
         holder.nome.setText(list.get(position).getNome());
         holder.descricao.setText(list.get(position).getEndereco());
@@ -37,14 +35,14 @@ public class ListAdapterUnidades extends RecyclerView.Adapter<ListAdapterUnidade
 
     @Override
     public int getItemCount() {
-        return (list!= null && list.size() > 0 ? list.size() : 0);
+        return (list != null && list.size() > 0 ? list.size() : 0);
     }
 
-    public class ListaUnidadesAdapterViewHolder extends RecyclerView.ViewHolder {
+    public class ListaUnidadesViewHolder extends RecyclerView.ViewHolder {
 
         private TextView nome, descricao;
 
-        public ListaUnidadesAdapterViewHolder(@NonNull View itemView) {
+        public ListaUnidadesViewHolder(@NonNull View itemView) {
             super(itemView);
 
             nome = itemView.findViewById(R.id.txtNome);

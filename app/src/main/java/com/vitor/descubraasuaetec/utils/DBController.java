@@ -40,6 +40,7 @@ public class DBController {
         Cursor cursor = dbConnection.getReadableDatabase().rawQuery("SELECT * FROM " + dbConnection.TABELA_UNIDADES, null);
 
         while (cursor.moveToNext()){
+
             int id = cursor.getInt(cursor.getColumnIndex(dbConnection.UNIDADES_ID));
             String nome = cursor.getString(cursor.getColumnIndex(dbConnection.UNIDADES_NOME));
             String cursos = cursor.getString(cursor.getColumnIndex(dbConnection.UNIDADES_CURSOS));

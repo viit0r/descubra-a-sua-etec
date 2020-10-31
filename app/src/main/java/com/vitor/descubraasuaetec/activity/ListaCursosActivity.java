@@ -4,21 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.database.Cursor;
 import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.vitor.descubraasuaetec.R;
 import com.vitor.descubraasuaetec.bean.Cursos;
-import com.vitor.descubraasuaetec.utils.DBConnection;
 import com.vitor.descubraasuaetec.utils.DBController;
 import com.vitor.descubraasuaetec.utils.ListAdapterCursos;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.concurrent.DelayQueue;
 
 public class ListaCursosActivity extends AppCompatActivity {
 

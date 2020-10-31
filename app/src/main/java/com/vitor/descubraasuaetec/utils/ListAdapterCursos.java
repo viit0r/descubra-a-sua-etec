@@ -22,7 +22,6 @@ public class ListAdapterCursos extends RecyclerView.Adapter<ListAdapterCursos.Li
     @Override
     public ListaCursosViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item, parent,false);
-
         return new ListaCursosViewHolder(view);
     }
 
@@ -36,7 +35,7 @@ public class ListAdapterCursos extends RecyclerView.Adapter<ListAdapterCursos.Li
 
     @Override
     public int getItemCount() {
-        return (list != null & list.size() > 0 ? list.size() : 0);
+        return (list != null && list.size() > 0 ? list.size() : 0);
     }
 
     public class ListaCursosViewHolder extends RecyclerView.ViewHolder {
@@ -48,7 +47,6 @@ public class ListAdapterCursos extends RecyclerView.Adapter<ListAdapterCursos.Li
 
             nome = itemView.findViewById(R.id.txtNome);
             descricao = itemView.findViewById(R.id.txtDescricao);
-
         }
     }
 }

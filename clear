@@ -1,0 +1,35 @@
+[33mcommit ed5051955be3bce269c663623a01bb5393fb60d3[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Vitor Oliveira <vituuoliveira1@gmail.com>
+Date:   Sat Oct 31 01:06:26 2020 -0300
+
+    Inserção de dados na lista de cursos e inicio da inserção na tabela Unidades
+
+[33mcommit f34e98056a312aa34289d62380ce1e8976028e52[m
+Author: Vitor Oliveira <vituuoliveira1@gmail.com>
+Date:   Fri Oct 30 04:07:26 2020 -0300
+
+    Inserção dos dados na tabela Cursos e criação do Adapter
+
+[33mcommit 6c2de8f88ec6b2257ab34b46dcef70bc59f7881d[m
+Author: Vitor Oliveira <vituuoliveira1@gmail.com>
+Date:   Tue Oct 27 23:14:21 2020 -0300
+
+    Criação do SQLite e bean
+
+[33mcommit 06b48d506cd9670feae75a53a4dcfb4bfbea5244[m
+Author: Vitor Oliveira <vituuoliveira1@gmail.com>
+Date:   Tue Oct 27 23:13:26 2020 -0300
+
+    Criação do SQLite e Bean
+
+[33mcommit 083f6ec7a7ce1644884ebc17034d140700438a9a[m
+Author: Vitor Oliveira <vituuoliveira1@gmail.com>
+Date:   Sun Oct 18 19:57:43 2020 -0300
+
+    Criação da tela de escolha e fontes
+
+[33mcommit bac95d4871fff8f02709a813b12a5df63763e1ff[m
+Author: Vitor Oliveira <vituuoliveira1@gmail.com>
+Date:   Sun Oct 18 18:10:37 2020 -0300
+
+    Criação do projeto e tela Splash

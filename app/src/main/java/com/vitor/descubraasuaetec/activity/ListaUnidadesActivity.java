@@ -6,15 +6,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 
 import com.vitor.descubraasuaetec.R;
 import com.vitor.descubraasuaetec.bean.Unidades;
 import com.vitor.descubraasuaetec.utils.DBController;
 import com.vitor.descubraasuaetec.utils.ListAdapterUnidades;
 
-import java.util.Arrays;
 import java.util.List;
 
 public class ListaUnidadesActivity extends AppCompatActivity {
@@ -43,6 +40,7 @@ public class ListaUnidadesActivity extends AppCompatActivity {
         DBController dbController = new DBController(this);
         return dbController.selecionaTudoUnidades();
     }
+
     //CONFIGURANDO O BOTAO HOME
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
