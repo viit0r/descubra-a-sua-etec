@@ -8,9 +8,13 @@ public class Cursos {
     public Cursos(){
     }
 
-    public Cursos(String nome, String descricao) {
+    public Cursos(int id, String nome, String descricao, String funcao, String tipos, String link) {
+        this.id = id;
         this.nome = nome;
         this.descricao = descricao;
+        this.funcao = funcao;
+        this.tipos = tipos;
+        this.link = link;
     }
 
     public int getId() {

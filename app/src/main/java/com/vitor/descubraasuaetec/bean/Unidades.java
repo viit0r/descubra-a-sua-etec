@@ -8,11 +8,6 @@ public class Unidades {
     public Unidades() {
     }
 
-    public Unidades(String nome, String endereco) {
-        this.nome = nome;
-        this.endereco = endereco;
-    }
-
     public Unidades(int id, String nome, String cursos, String etim, String endereco, String site, String telefone) {
         this.id = id;
         this.nome = nome;

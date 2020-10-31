@@ -15,10 +15,10 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        //escondendo actionbar
+        //ESCONDENDO ACTIONBAR
         getSupportActionBar().hide();
 
-        //criando a tela splash
+        //CRIANDO A TELA SPLASH
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {

@@ -4,13 +4,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.vitor.descubraasuaetec.R;
 import com.vitor.descubraasuaetec.bean.Cursos;
-
 import java.util.List;
 
 public class ListAdapterCursos extends RecyclerView.Adapter<ListAdapterCursos.ListaCursosViewHolder> {

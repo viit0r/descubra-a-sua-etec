@@ -4,13 +4,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.vitor.descubraasuaetec.R;
 import com.vitor.descubraasuaetec.bean.Unidades;
-
 import java.util.List;
 
 public class ListAdapterUnidades extends RecyclerView.Adapter<ListAdapterUnidades.ListaUnidadesAdapterViewHolder> {
