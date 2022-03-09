@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tcc.descubrasuaetec">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ico"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ico"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name="com.tcc.descubrasuaetec.TelaUnidade" />
+
+        <activity android:name="com.tcc.descubrasuaetec.TelaCursos" />
+
+        <activity android:name="com.tcc.descubrasuaetec.TelaInicio">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.tcc.descubrasuaetec.SobreActivity"
+            android:label="@string/titulo_sobre" />
+
+        <activity
+            android:name="com.tcc.descubrasuaetec.ListaUnidade"
+            android:label="Unidades" />
+
+        <activity
+            android:name="com.tcc.descubrasuaetec.MainActivity" />
+
+        <activity
+            android:name="com.tcc.descubrasuaetec.ListaCursos"
+            android:label="Cursos" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
